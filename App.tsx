@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.myTextH}>Salman Saeed Quotes</Text>
-      <MyQuotesDisplay /> 
+      <MyQuotesDisplay />
       <StatusBar style="auto" />
     </View>
   );
@@ -17,15 +17,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black',
     alignItems: 'center',
-    height: '3%', 
-  },
+    height: '3%',
+     },
   myTextH: {
-    color: 'white',
+    color: 'gold',
     fontSize: 30,
     fontWeight: 'bold',
-    backgroundColor:'grey',
-    width: '100%',  
-    textAlign: 'center', 
-    padding: '1%',
-    },
+    backgroundColor: 'grey',
+    width: '100%',
+    textAlign: 'center',
+    padding: '4%',
+  },
 });
