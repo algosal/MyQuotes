@@ -31,18 +31,33 @@ export default function MyQuotesDisplay() {
     return (
         <View>
             <View>
-                <View style={{ padding: '2%', }} />
-                <Text style={{ color: 'orange', width: 380, height: 125, textAlign: 'center', fontSize: 70, fontWeight: 'bold', }}>
+                <View style={{ paddingTop: '1%',  }} />
+                <Text style={{ color: 'orange', width: 380, height: 120, textAlign: 'center', fontSize: 70, fontWeight: 'bold', }}>
                     {Math.ceil(Math.random() * 49)}   {number}   {Math.ceil(Math.random() * 49)}</Text>
 
-                      <Text style={{ color: 'white', width: 350, height: 325, fontSize: 15, fontWeight: 'bold', alignSelf:'center', paddingLeft:'5%'}}>
-                    {myQuote}</Text>
-            </View>
+                    <Text style={{ 
+                    color: 'white', width: 380, height: 350, 
+                    fontSize: 20, 
+                    fontWeight: 'bold', 
+                    alignSelf:'center', 
+                    alignItems:'center', 
+                    textAlignVertical:'center',  
+                    paddingLeft:'5%', 
+                    paddingRight:'3%', 
+                    paddingBottom:'2%',
+                    }}>
+                        {myQuote} 
+                    </Text>
+                </View>
+
+            <View style={{ display: "flex" , color: 'white', width: 250, alignSelf:'center', marginTop:'4%', flexDirection: "row-reverse"}}>
             <Button
                 title='Roll the Dice'
                 onPress={MyQuotesServiceLoop}
             />
+            </View>
         </View>
+
     );
 }
 
