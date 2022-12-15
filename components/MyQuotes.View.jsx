@@ -24,7 +24,7 @@ export default function MyQuotesDisplay() {
         async function MyQuoteService(mySelection) {
             let x = await MyQuote();
             //console.log(x); 
-            setMyQuote("\n\t" + x[mySelection].q + "\n\t\t\t\t" + String.fromCharCode(0x2015) + " by " + x[mySelection].a);
+            setMyQuote("\n\t" + x[mySelection].q + "\n\t\t\t" + String.fromCharCode(0x2015) + " by " + x[mySelection].a);
         }
     }
 
@@ -32,16 +32,14 @@ export default function MyQuotesDisplay() {
         <View>
             <View>
                 <View style={{ paddingTop: '1%',  }} />
-                <Text style={{ color: 'orange', width: 380, height: 120, textAlign: 'center', fontSize: 70, fontWeight: 'bold', }}>
+                <Text style={{ color: 'orange', width: 380, height: 150, textAlign: 'center', fontSize: 70, fontWeight: 'bold', }}>
                     {Math.ceil(Math.random() * 49)}   {number}   {Math.ceil(Math.random() * 49)}</Text>
 
                     <Text style={{ 
-                    color: 'white', width: 380, height: 350, 
+                    color: 'white', width: 350, height: 350, 
                     fontSize: 20, 
                     fontWeight: 'bold', 
                     alignSelf:'center', 
-                    alignItems:'center', 
-                    textAlignVertical:'center',  
                     paddingLeft:'5%', 
                     paddingRight:'3%', 
                     paddingBottom:'2%',
@@ -50,7 +48,7 @@ export default function MyQuotesDisplay() {
                     </Text>
                 </View>
 
-            <View style={{ display: "flex" , color: 'white', width: 250, alignSelf:'center', marginTop:'4%', flexDirection: "row-reverse"}}>
+            <View style={{ display: "flex" , color: 'white', width: 300, alignSelf:'center', marginTop:'4%',}}>
             <Button
                 title='Roll the Dice'
                 onPress={MyQuotesServiceLoop}
